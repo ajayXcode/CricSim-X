@@ -389,6 +389,36 @@
       <span class="ftag">EMA α=0.35</span>
     </div>
   </footer>
+  <!-- ═══ AI CHATBOT ═══════════════════════════════════════ -->
+  <button class="chat-fab" id="chat-fab" onclick="toggleChat()">
+    <span class="chat-fab-icon">✨</span>
+  </button>
+
+  <div class="chat-window" id="chat-window">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">🏏</div>
+        <div>
+          <div class="chat-title">CricSim AI</div>
+          <div class="chat-status"><span class="dot" style="position:static;display:inline-block;width:6px;height:6px;margin-right:4px;"></span>Online</div>
+        </div>
+      </div>
+      <button class="chat-close" onclick="toggleChat()">×</button>
+    </div>
+    
+    <div class="chat-body" id="chat-body">
+      <div class="chat-msg ai">
+        <div class="msg-text">Hello! I'm your CricSim AI assistant. Ask me anything about IPL 2026 predictions or stats!</div>
+      </div>
+    </div>
+    
+    <div class="chat-footer">
+      <input type="text" class="chat-input" id="chat-input" placeholder="Ask about predictions..." onkeypress="handleChat(event)"/>
+      <button class="chat-send" onclick="sendChat()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+      </button>
+    </div>
+  </div>
 
 </main>
 

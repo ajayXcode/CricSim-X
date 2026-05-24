@@ -424,3 +424,45 @@ document.addEventListener('DOMContentLoaded', ()=>{
   setupNav();
   setupReveal();
 });
+
+/* ─── AI CHATBOT ──────────────────────────────────────────── */
+function toggleChat(){
+  const win = $('chat-window');
+  win.classList.toggle('open');
+}
+
+function handleChat(e){
+  if(e.key === 'Enter') sendChat();
+}
+
+function sendChat(){
+  const inp = $('chat-input');
+  const txt = inp.value.trim();
+  if(!txt) return;
+  
+  // User message
+  addChatMsg(txt, 'user');
+  inp.value = '';
+  
+  // Fake AI typing
+  setTimeout(()=>{
+    const responses = [
+      "Based on the MCMC model, RCB has a 48.4% chance to chase this target.",
+      "The EMA form shows MI is currently peaking in performance this season.",
+      "Wankhede Stadium historically heavily favors teams batting second.",
+      "Our XGBoost ensemble currently has a 0.71 ROC-AUC for predicting upcoming matches.",
+      "I can run a deeper simulation if you modify the match state above!"
+    ];
+    const reply = responses[Math.floor(Math.random() * responses.length)];
+    addChatMsg(reply, 'ai');
+  }, 800 + Math.random() * 1000);
+}
+
+function addChatMsg(text, type){
+  const body = $('chat-body');
+  const msg = document.createElement('div');
+  msg.className = `chat-msg ${type} rev`;
+  msg.innerHTML = `<div class="msg-text">${text}</div>`;
+  body.appendChild(msg);
+  body.scrollTop = body.scrollHeight;
+}
