@@ -66,29 +66,30 @@ function simulate(target, score, wickets, balls, n=2000){
 
   const R = rrr(need, balls);
   const W = wpi(wickets);
-  const ratio = 8.5 / Math.max(R, 0.1);
-  const base  = ratio / (1 + ratio);
-  const prob  = Math.min(0.95, Math.max(0.05, base * W));
+  let reqRatePerBall = need / balls;
 
   let wins = 0;
-  const paths = [];
-
   for(let i = 0; i < n; i++){
     let sc=score, wk=wickets, bl=balls;
-    const track = i < 100 ? [{x: 120-balls, y: sc}] : null;
-
-    while(bl > 0 && wk < 10 && sc <= target){
-      if(Math.random() < prob) sc += wpick([1,2,4,6],[.4,.1,.3,.2]);
-      else wk++;
-      bl--;
-      if(track) track.push({x: 120-bl, y: sc});
+    while(bl > 0 && wk < 10 && sc < target){
+       let r = Math.random();
+       let risk = Math.max(1, reqRatePerBall / 1.3);
+       let wktChance = 0.045 * Math.pow(risk, 1.5) * (1 + wk*0.05);
+       
+       if(r < wktChance) {
+          wk++;
+       } else {
+          let scoreChance = Math.min(0.95, 0.6 * risk); 
+          if(Math.random() < scoreChance) {
+             sc += wpick([1,2,4,6], [0.45, 0.25, 0.2, 0.1]);
+          }
+       }
+       bl--;
     }
-
-    if(sc > target) wins++;
-    if(track) paths.push({pts: track, won: sc > target});
+    if(sc >= target) wins++;
   }
 
-  return { p: +(wins/n*100).toFixed(1), paths, rrr: R, wpi: W, need };
+  return { p: +(wins/n*100).toFixed(1), paths:[], rrr: R, wpi: W, need };
 }
 
 /* ─── CHART REGISTRY ──────────────────────────────────────── */
