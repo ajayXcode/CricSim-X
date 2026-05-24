@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>CricSim-X — IPL 2026 Analytics</title>
+  <meta name="description" content="Premium IPL match intelligence — Monte Carlo win probability, team analytics, and fixture predictions."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+<!-- ── TOP BAR ──────────────────────────────────────────── -->
+<header class="topbar">
+  <a class="logo" href="#">
+    <div class="logo-mark">🏏</div>
+    <div class="logo-text">Cric<span>Sim</span>-X</div>
+  </a>
+
+  <ul class="topbar-nav">
+    <li><a href="#simulator"  class="on">Simulator</a></li>
+    <li><a href="#teams"          >Teams</a></li>
+    <li><a href="#fixtures"       >Fixtures</a></li>
+    <li><a href="#venues"         >Venues</a></li>
+  </ul>
+
+  <div class="live-chip">
+    <div class="dot"></div>
+    IPL 2026 · Live
+  </div>
+</header>
+
+<!-- ── PAGE ─────────────────────────────────────────────── -->
+<main class="page">
+
+  <!-- HERO -->
+  <section class="hero rev">
+    <div class="hero-bg-glow"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow">🏆 &nbsp;IPL 2026 Season Analytics</div>
+
+      <h1 class="hero-h1">
+        Match Intelligence<br/>
+        <span class="text-gradient">Powered by Data</span>
+      </h1>
+
+      <p class="hero-p">
+        10,000-path Monte Carlo simulation combined with our predictive engine
+        trained on 18 seasons of IPL ball-by-ball records.
+        Real-time win probability and franchise-level strategy.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#simulator" class="hero-btn">
+          <span class="btn-icon">⚡</span>
+          Launch Simulator
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hstat">
+          <div class="hstat-val">18<span> yrs</span></div>
+          <div class="hstat-label">IPL data<br/>2008 – 2025</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-val">10<span>K</span></div>
+          <div class="hstat-label">MC paths<br/>per simulation</div>
+        </div>
+        <div class="hstat">
+          <div class="hstat-val"><span>64.9</span>%</div>
+          <div class="hstat-label">Prediction<br/>Accuracy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KPI ROW -->
+  <div class="kpis">
+    <div class="kpi-card gold rev d1">
+      <div class="kpi-badge gold">Accuracy</div>
+      <div class="kpi-icon gold">🎯</div>
+      <div class="kpi-number">64.9%</div>
+      <div class="kpi-desc">Test Set Prediction</div>
+    </div>
+    <div class="kpi-card teal rev d2">
+      <div class="kpi-badge teal">Confidence</div>
+      <div class="kpi-icon teal">📈</div>
+      <div class="kpi-number">0.71</div>
+      <div class="kpi-desc">AUC-ROC Score</div>
+    </div>
+    <div class="kpi-card blue rev d3">
+      <div class="kpi-badge blue">2008-25</div>
+      <div class="kpi-icon blue">📊</div>
+      <div class="kpi-number">1,201</div>
+      <div class="kpi-desc">Match Records</div>
+    </div>
+    <div class="kpi-card red rev d4">
+      <div class="kpi-badge red">IPL 2026</div>
+      <div class="kpi-icon red">🏏</div>
+      <div class="kpi-number">49</div>
+      <div class="kpi-desc">Fixtures Predicted</div>
+    </div>
+  </div>
+
+  <!-- ═══ LIVE SCORE ═══════════════════════════════════════ -->
+  <div class="divider"><div class="divider-line"></div><span class="divider-label">Live Match</span><div class="divider-line"></div></div>
+
+  <section id="live-score" style="margin-bottom: -10px;">
+    <div class="card rev">
+      <div class="card-body" style="padding: 24px;">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:20px;">
+          
+          <div style="display:flex; flex-direction:column; gap:4px;">
+            <div style="font-size:10px; color:var(--red); font-weight:700; text-transform:uppercase; letter-spacing:1px; display:flex; align-items:center; gap:6px;">
+              <span class="dot" style="position:static;"></span> Live Now
+            </div>
+            <div style="font-size:12px; color:var(--grey); font-weight:600;">Match 42 &nbsp;·&nbsp; M. Chinnaswamy</div>
+          </div>
+
+          <div style="display:flex; align-items:center; gap:30px;">
+            <div style="text-align:right;">
+              <div style="font-size:18px; font-weight:800; color:var(--white);">MI</div>
+              <div style="font-size:12px; color:var(--grey);">175/6 <span style="opacity:0.6">(20.0)</span></div>
+            </div>
+            
+            <div style="font-size:13px; font-weight:800; color:var(--dim);">VS</div>
+
+            <div style="text-align:left;">
+              <div style="font-size:18px; font-weight:800; color:var(--white);">RCB</div>
+              <div style="font-size:24px; font-weight:800; color:var(--gold); line-height:1; margin-top:2px;">92/3 <span style="font-size:14px; color:var(--grey); font-weight:600;">(11.0)</span></div>
+            </div>
+          </div>
+
+          <div style="text-align:right;">
+            <div style="font-size:13px; font-weight:700; color:var(--teal);">RCB needs 84 runs in 54 balls</div>
+            <div style="font-size:11px; color:var(--dim); margin-top:4px;">CRR: 8.36 &nbsp;·&nbsp; RRR: 9.33</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 1 — SIMULATOR ═══════════════════════════ -->
+  <div class="divider"><div class="divider-line"></div><span class="divider-label">Live Simulator</span><div class="divider-line"></div></div>
+
+  <section id="simulator">
+    <div class="two-col">
+
+      <!-- Input card -->
+      <div class="card rev">
+        <div class="card-top">
+          <div class="card-heading">
+            <div class="card-icon gold">⚡</div>
+            Match State
+          </div>
+          <span class="card-tag gold">Engine</span>
+        </div>
+        <div class="card-body">
+          <div class="form-grid">
+
+            <div class="fgroup">
+              <label class="flabel" for="f-target">Target</label>
+              <input class="finput" type="number" id="f-target" value="175" min="50" max="350"/>
+            </div>
+            <div class="fgroup">
+              <label class="flabel" for="f-score">Current Score</label>
+              <input class="finput" type="number" id="f-score" value="92" min="0" max="349"/>
+            </div>
+            <div class="fgroup">
+              <label class="flabel" for="f-wk">Wickets Lost</label>
+              <input class="finput" type="number" id="f-wk" value="3" min="0" max="9"/>
+            </div>
+            <div class="fgroup">
+              <label class="flabel" for="f-bl">Balls Remaining</label>
+              <input class="finput" type="number" id="f-bl" value="54" min="1" max="120"/>
+            </div>
+
+            <div class="fgroup full">
+              <label class="flabel" for="f-team">Chasing Team</label>
+              <select class="fselect" id="f-team">
+                <option>Mumbai Indians</option>
+                <option>Chennai Super Kings</option>
+                <option selected>Royal Challengers Bengaluru</option>
+                <option>Kolkata Knight Riders</option>
+                <option>Rajasthan Royals</option>
+                <option>Delhi Capitals</option>
+                <option>Punjab Kings</option>
+                <option>Sunrisers Hyderabad</option>
+                <option>Gujarat Titans</option>
+                <option>Lucknow Super Giants</option>
+              </select>
+            </div>
+            <div class="fgroup full">
+              <label class="flabel" for="f-venue">Venue</label>
+              <select class="fselect" id="f-venue">
+                <option>Wankhede Stadium, Mumbai</option>
+                <option selected>M. Chinnaswamy Stadium, Bengaluru</option>
+                <option>M.A. Chidambaram Stadium, Chennai</option>
+                <option>Eden Gardens, Kolkata</option>
+                <option>Sawai Mansingh Stadium, Jaipur</option>
+                <option>Arun Jaitley Stadium, Delhi</option>
+                <option>Narendra Modi Stadium, Ahmedabad</option>
+                <option>Rajiv Gandhi Int. Stadium, Hyderabad</option>
+                <option>Punjab Cricket Association Stadium</option>
+                <option>Ekana Cricket Stadium, Lucknow</option>
+              </select>
+            </div>
+
+            <button class="sim-btn" id="sim-btn" onclick="runSim()">
+              <span id="btn-ico">⚡</span>
+              <span id="btn-lbl">Run Simulation</span>
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Output card -->
+      <div class="card rev d2">
+        <div class="card-top">
+          <div class="card-heading">
+            <div class="card-icon gold">🎯</div>
+            Win Probability
+          </div>
+          <span class="card-tag gold" id="out-team-badge">RCB Chasing</span>
+        </div>
+        <div class="card-body">
+          <div class="win-center">
+
+            <!-- Gauge -->
+            <div class="gauge-shell">
+              <canvas id="gaugeC" width="200" height="110"></canvas>
+              <div class="gauge-txt">
+                <div class="gauge-big" id="gauge-pct">48.4%</div>
+                <div class="gauge-sub">Win Prob</div>
+              </div>
+            </div>
+
+            <!-- Mini stats -->
+            <div class="mini-stats">
+              <div class="mini-stat">
+                <div class="mini-stat-val" id="ms-rrr">9.72</div>
+                <div class="mini-stat-key">RRR</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-val" id="ms-wpi">0.754</div>
+                <div class="mini-stat-key">Wicket Pressure</div>
+              </div>
+              <div class="mini-stat">
+                <div class="mini-stat-val" id="ms-need">83</div>
+                <div class="mini-stat-key">Runs Needed</div>
+              </div>
+            </div>
+
+            <!-- Probability bar -->
+            <div class="pbar-wrap">
+              <div class="pbar-labels">
+                <span id="pb-chase-lbl">RCB</span>
+                <span id="pb-def-lbl">Defending</span>
+              </div>
+              <div class="pbar-track">
+                <div class="pbar-fill" id="pbar"></div>
+              </div>
+              <div class="pbar-vals">
+                <span id="pv-chase">48.4%</span>
+                <span id="pv-defend">51.6%</span>
+              </div>
+            </div>
+
+            <div class="sim-meta">
+              N = 10,000 paths &nbsp;·&nbsp; EMA alpha = 0.35 &nbsp;·&nbsp; WPI decay = 0.92
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ═══ SECTION 3 — TEAMS ════════════════════════════════ -->
+  <div class="divider"><div class="divider-line"></div><span class="divider-label">Team Analytics</span><div class="divider-line"></div></div>
+
+  <section id="teams">
+    <div class="two-col">
+
+      <div class="card rev">
+        <div class="card-top">
+          <div class="card-heading">
+            <div class="card-icon red">📡</div>
+            Franchise Radar
+          </div>
+          <span class="card-tag gold" id="radar-team-tag">MI Selected</span>
+        </div>
+        <div class="card-body" style="padding:18px 22px;">
+          <div class="team-chips" id="tchips"></div>
+          <canvas id="radarC" height="260"></canvas>
+        </div>
+      </div>
+
+      <div class="card rev d2">
+        <div class="card-top">
+          <div class="card-heading">
+            <div class="card-icon gold">📈</div>
+            EMA Form — Season Trend
+          </div>
+          <span class="card-tag gold">2018 – 2025</span>
+        </div>
+        <div class="card-body" style="padding:16px;">
+          <canvas id="emaC" height="260"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 4 — FIXTURES ═════════════════════════════ -->
+  <div class="divider"><div class="divider-line"></div><span class="divider-label">IPL 2026 Fixtures</span><div class="divider-line"></div></div>
+
+  <section id="fixtures">
+    <div class="card rev">
+      <div class="card-top">
+        <div class="card-heading">
+          <div class="card-icon blue">🗓️</div>
+          Predicted Outcomes
+        </div>
+        <span class="card-tag blue" id="fix-count-tag">49 matches</span>
+      </div>
+      <div class="ftable-wrap">
+        <table class="ftable">
+          <thead>
+            <tr>
+              <th>Match</th>
+              <th>Teams</th>
+              <th>Venue</th>
+              <th>Winner</th>
+              <th>Confidence</th>
+            </tr>
+          </thead>
+          <tbody id="ftbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SECTION 5 — VENUES ═══════════════════════════════ -->
+  <div class="divider"><div class="divider-line"></div><span class="divider-label">Venue Analytics</span><div class="divider-line"></div></div>
+
+  <section id="venues">
+    <div class="two-col">
+
+      <div class="card rev">
+        <div class="card-top">
+          <div class="card-heading">
+            <div class="card-icon red">🏟️</div>
+            Ground Stats
+          </div>
+          <span class="card-tag red">10 Venues</span>
+        </div>
+        <div class="card-body" style="padding:16px;">
+          <div class="vgrid" id="vgrid"></div>
+        </div>
+      </div>
+
+      <div class="card rev d2">
+        <div class="card-top">
+          <div class="card-heading">
+            <div class="card-icon blue">📊</div>
+            Bat First vs Chase
+          </div>
+        </div>
+        <div class="card-body" style="padding:16px;">
+          <canvas id="venueC" height="310"></canvas>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <span>CricSim-X © 2026 &nbsp;·&nbsp; <a href="#">18 seasons of intelligence</a></span>
+    <div class="ftags">
+      <span class="ftag">Monte Carlo</span>
+      <span class="ftag">EMA α=0.35</span>
+    </div>
+  </footer>
+
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

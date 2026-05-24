@@ -1,0 +1,50 @@
+match_id,date_utc,team1,team2,venue,win_prob_t1,win_prob_t2,predicted_winner
+5000,2026-03-08T14:00:00Z,Gujarat Titans,Delhi Capitals,"Arun Jaitley Stadium, Delhi",0.0,100.0,Delhi Capitals
+5001,2026-03-09T14:00:00Z,Chennai Super Kings,Delhi Capitals,"Ekana Cricket Stadium, Lucknow",0.0,100.0,Delhi Capitals
+5002,2026-03-10T14:00:00Z,Punjab Kings,Gujarat Titans,"Arun Jaitley Stadium, Delhi",0.0,100.0,Gujarat Titans
+5003,2026-03-11T14:00:00Z,Delhi Capitals,Royal Challengers Bengaluru,"Arun Jaitley Stadium, Delhi",0.0,100.0,Royal Challengers Bengaluru
+5004,2026-03-12T14:00:00Z,Rajasthan Royals,Kolkata Knight Riders,"Punjab Cricket Association Stadium, Mohali",0.0,100.0,Kolkata Knight Riders
+5005,2026-03-13T14:00:00Z,Lucknow Super Giants,Kolkata Knight Riders,"M. Chinnaswamy Stadium, Bengaluru",0.0,100.0,Kolkata Knight Riders
+5006,2026-03-14T14:00:00Z,Kolkata Knight Riders,Delhi Capitals,"Eden Gardens, Kolkata",0.0,100.0,Delhi Capitals
+5007,2026-03-15T14:00:00Z,Punjab Kings,Royal Challengers Bengaluru,"Eden Gardens, Kolkata",0.0,100.0,Royal Challengers Bengaluru
+5008,2026-03-16T14:00:00Z,Punjab Kings,Lucknow Super Giants,"Eden Gardens, Kolkata",0.0,100.0,Lucknow Super Giants
+5009,2026-03-17T14:00:00Z,Punjab Kings,Sunrisers Hyderabad,"Wankhede Stadium, Mumbai",0.0,100.0,Sunrisers Hyderabad
+5010,2026-03-18T14:00:00Z,Royal Challengers Bengaluru,Mumbai Indians,"Rajiv Gandhi International Stadium, Hyderabad",0.0,100.0,Mumbai Indians
+5011,2026-03-19T14:00:00Z,Mumbai Indians,Rajasthan Royals,"Narendra Modi Stadium, Ahmedabad",0.0,100.0,Rajasthan Royals
+5012,2026-03-20T14:00:00Z,Rajasthan Royals,Mumbai Indians,"Punjab Cricket Association Stadium, Mohali",0.0,100.0,Mumbai Indians
+5013,2026-03-21T14:00:00Z,Sunrisers Hyderabad,Delhi Capitals,"Arun Jaitley Stadium, Delhi",0.0,100.0,Delhi Capitals
+5014,2026-03-22T14:00:00Z,Punjab Kings,Royal Challengers Bengaluru,"Arun Jaitley Stadium, Delhi",0.0,100.0,Royal Challengers Bengaluru
+5015,2026-03-23T14:00:00Z,Chennai Super Kings,Gujarat Titans,"Wankhede Stadium, Mumbai",0.0,100.0,Gujarat Titans
+5016,2026-03-24T14:00:00Z,Royal Challengers Bengaluru,Mumbai Indians,"Wankhede Stadium, Mumbai",0.0,100.0,Mumbai Indians
+5017,2026-03-25T14:00:00Z,Chennai Super Kings,Sunrisers Hyderabad,"M. Chinnaswamy Stadium, Bengaluru",0.0,100.0,Sunrisers Hyderabad
+5018,2026-03-26T14:00:00Z,Lucknow Super Giants,Delhi Capitals,"Eden Gardens, Kolkata",0.0,100.0,Delhi Capitals
+5019,2026-03-27T14:00:00Z,Sunrisers Hyderabad,Delhi Capitals,"Ekana Cricket Stadium, Lucknow",0.0,100.0,Delhi Capitals
+5020,2026-03-28T14:00:00Z,Punjab Kings,Kolkata Knight Riders,"M. Chinnaswamy Stadium, Bengaluru",0.0,100.0,Kolkata Knight Riders
+5021,2026-04-01T14:00:00Z,Lucknow Super Giants,Punjab Kings,"Arun Jaitley Stadium, Delhi",0.0,100.0,Punjab Kings
+5022,2026-04-02T14:00:00Z,Sunrisers Hyderabad,Kolkata Knight Riders,"Punjab Cricket Association Stadium, Mohali",0.0,100.0,Kolkata Knight Riders
+5023,2026-04-03T14:00:00Z,Rajasthan Royals,Royal Challengers Bengaluru,"Ekana Cricket Stadium, Lucknow",0.0,100.0,Royal Challengers Bengaluru
+5024,2026-04-04T14:00:00Z,Delhi Capitals,Rajasthan Royals,"Rajiv Gandhi International Stadium, Hyderabad",0.0,100.0,Rajasthan Royals
+5025,2026-04-05T14:00:00Z,Punjab Kings,Sunrisers Hyderabad,"Rajiv Gandhi International Stadium, Hyderabad",0.0,100.0,Sunrisers Hyderabad
+5026,2026-04-06T14:00:00Z,Sunrisers Hyderabad,Kolkata Knight Riders,"Sawai Mansingh Stadium, Jaipur",0.0,100.0,Kolkata Knight Riders
+5027,2026-04-07T14:00:00Z,Delhi Capitals,Mumbai Indians,"Sawai Mansingh Stadium, Jaipur",0.0,100.0,Mumbai Indians
+5028,2026-04-08T14:00:00Z,Gujarat Titans,Rajasthan Royals,"M.A. Chidambaram Stadium, Chennai",0.0,100.0,Rajasthan Royals
+5029,2026-04-09T14:00:00Z,Sunrisers Hyderabad,Chennai Super Kings,"Punjab Cricket Association Stadium, Mohali",0.0,100.0,Chennai Super Kings
+5030,2026-04-10T14:00:00Z,Mumbai Indians,Sunrisers Hyderabad,"M. Chinnaswamy Stadium, Bengaluru",0.0,100.0,Sunrisers Hyderabad
+5031,2026-04-11T14:00:00Z,Mumbai Indians,Gujarat Titans,"M. Chinnaswamy Stadium, Bengaluru",0.0,100.0,Gujarat Titans
+5032,2026-04-12T14:00:00Z,Royal Challengers Bengaluru,Punjab Kings,"Eden Gardens, Kolkata",0.0,100.0,Punjab Kings
+5033,2026-04-13T14:00:00Z,Lucknow Super Giants,Royal Challengers Bengaluru,"Eden Gardens, Kolkata",0.0,100.0,Royal Challengers Bengaluru
+5034,2026-04-14T14:00:00Z,Sunrisers Hyderabad,Gujarat Titans,"M. Chinnaswamy Stadium, Bengaluru",0.0,100.0,Gujarat Titans
+5035,2026-04-15T14:00:00Z,Delhi Capitals,Mumbai Indians,"Sawai Mansingh Stadium, Jaipur",0.0,100.0,Mumbai Indians
+5036,2026-04-16T14:00:00Z,Royal Challengers Bengaluru,Lucknow Super Giants,"Narendra Modi Stadium, Ahmedabad",0.0,100.0,Lucknow Super Giants
+5037,2026-04-17T14:00:00Z,Sunrisers Hyderabad,Rajasthan Royals,"Arun Jaitley Stadium, Delhi",0.0,100.0,Rajasthan Royals
+5038,2026-04-18T14:00:00Z,Mumbai Indians,Kolkata Knight Riders,"Punjab Cricket Association Stadium, Mohali",0.0,100.0,Kolkata Knight Riders
+5039,2026-04-19T14:00:00Z,Gujarat Titans,Kolkata Knight Riders,"M.A. Chidambaram Stadium, Chennai",0.0,100.0,Kolkata Knight Riders
+5040,2026-04-20T14:00:00Z,Mumbai Indians,Sunrisers Hyderabad,"Sawai Mansingh Stadium, Jaipur",0.0,100.0,Sunrisers Hyderabad
+5041,2026-04-21T14:00:00Z,Mumbai Indians,Royal Challengers Bengaluru,"Narendra Modi Stadium, Ahmedabad",0.0,100.0,Royal Challengers Bengaluru
+5042,2026-04-22T14:00:00Z,Royal Challengers Bengaluru,Kolkata Knight Riders,"Ekana Cricket Stadium, Lucknow",0.0,100.0,Kolkata Knight Riders
+5043,2026-04-23T14:00:00Z,Delhi Capitals,Gujarat Titans,"Narendra Modi Stadium, Ahmedabad",0.0,100.0,Gujarat Titans
+5044,2026-04-24T14:00:00Z,Rajasthan Royals,Royal Challengers Bengaluru,"Rajiv Gandhi International Stadium, Hyderabad",0.0,100.0,Royal Challengers Bengaluru
+5045,2026-04-25T14:00:00Z,Mumbai Indians,Lucknow Super Giants,"M.A. Chidambaram Stadium, Chennai",0.0,100.0,Lucknow Super Giants
+5046,2026-04-26T14:00:00Z,Royal Challengers Bengaluru,Punjab Kings,"Arun Jaitley Stadium, Delhi",0.0,100.0,Punjab Kings
+5047,2026-04-27T14:00:00Z,Kolkata Knight Riders,Punjab Kings,"Narendra Modi Stadium, Ahmedabad",0.0,100.0,Punjab Kings
+5048,2026-04-28T14:00:00Z,Mumbai Indians,Lucknow Super Giants,"Arun Jaitley Stadium, Delhi",0.0,100.0,Lucknow Super Giants
